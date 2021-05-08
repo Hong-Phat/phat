@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainlayout"
+    android:padding="5dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:padding="5dp"
+        android:paddingLeft="0dp">
+
+        <TextView
+            android:id="@+id/ma_nv_luong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="CNTT"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintStart_toEndOf="@+id/MaPB2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ten_nv_luong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Công Nghệ Thông Tin"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/ma_nv_luong"
+            app:layout_constraintTop_toBottomOf="@+id/ma_nv_luong" />
+
+        <TextView
+            android:id="@+id/ngaylap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="0939821996"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/ten_nv_luong"
+            app:layout_constraintTop_toBottomOf="@+id/ten_nv_luong" />
+
+        <TextView
+            android:id="@+id/MaPB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Mã Phòng Ban: "
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Tenpb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Tên Phòng: "
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MaPB2" />
+
+        <TextView
+            android:id="@+id/sdtPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Số điện thoại: "
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Tenpb2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

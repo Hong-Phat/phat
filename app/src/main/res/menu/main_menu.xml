@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_staff"
+            android:icon="@drawable/staff"
+            android:title="Staff">
+
+            <menu>
+                <item
+                    android:id="@+id/staff"
+                    android:icon="@drawable/staff"
+                    android:title="Staff management" />
+                <item
+                    android:id="@+id/addstaff"
+                    android:icon="@drawable/ic_add"
+                    android:title="Add employee" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_department"
+            android:icon="@drawable/department"
+            android:title="Departmant">
+
+            <menu>
+
+                <item
+                    android:id="@+id/depart"
+                    android:icon="@drawable/department"
+                    android:title="Department management" />
+
+                <item
+                    android:id="@+id/adddepartment"
+                    android:icon="@drawable/ic_add"
+                    android:title="Add department" />
+            </menu>
+
+        </item>
+        <item
+            android:id="@+id/nav_payroll"
+            android:icon="@drawable/salary"
+            android:title="Payroll">
+
+            <menu>
+
+                <item
+                    android:id="@+id/Timekeeping"
+                    android:icon="@drawable/salary"
+                    android:title="Timekeeping" />
+                <item
+                    android:id="@+id/Salary"
+                    android:icon="@drawable/icontimesheets"
+                    android:title="Salary" />
+
+            </menu>
+
+        </item>
+    </group>
+</menu>
